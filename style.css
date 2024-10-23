@@ -44,7 +44,7 @@ body, html {
     left: 50%;
     width: 50%;
     height: 6px;
-    background: url('My files/Linux files/Front end dev assignment 5/Images/Clock parts/hand.png') no-repeat center;
+    background: url('My%20files/Linux%20files/Front%20end%20dev%20assignment%205/Images/Clock%20parts/hand.png') no-repeat center;
     background-size: cover;
     transform-origin: 100%;
     transform: rotate(0deg);
@@ -53,12 +53,12 @@ body, html {
 
 .hour-hand {
     height: 8px;
-    animation: rotateHourHand 43200s infinite linear;
+    animation: rotateHourHand 60s infinite linear;
 }
 
 .minute-hand {
     height: 4px;
-    animation: rotateMinuteHand 3600s infinite linear;
+    animation: rotateMinuteHand 60s infinite linear;
 }
 
 @keyframes rotateHourHand {
