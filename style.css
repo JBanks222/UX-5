@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.clock-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.clock {
+    width: 100%;
+    height: 100%;
+}
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 50%;
+    height: 6px;
+    background: url('My files/Linux files/Front end dev assignment 5/Images/Clock parts/hand.png') no-repeat center;
+    background-size: cover;
+    transform-origin: 100%;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.hour-hand {
+    height: 8px;
+    animation: rotateHourHand 43200s infinite linear;
+}
+
+.minute-hand {
+    height: 4px;
+    animation: rotateMinuteHand 3600s infinite linear;
+}
+
+@keyframes rotateHourHand {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateMinuteHand {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
